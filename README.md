@@ -1,43 +1,42 @@
 # Shopping List App
 
-A simple Flutter application to manage your grocery shopping list. Items are stored in Firebase, allowing you to add, view, and remove groceries in real time.
+A simple Flutter shopping list app that helps users add, view, and remove grocery items.
 
 ## Features
 
 - Add new grocery items with name, quantity, and category
-- View your shopping list
+- View the shopping list
 - Remove items by swiping
-- Data is synced with Firebase
-- Modern and responsive UI
+- Sync data with Firebase in real time
+- Modern and responsive user interface
+
+## Screens Used in the Project
+
+- `main.dart` → app entry point
+- `grocery_list.dart` → main shopping list screen
+- `new_item.dart` → form for adding a new grocery item
+- `grocery_item.dart` → grocery item data model
+- `categories.dart` → category data used in the app
+
+## How It Works
+
+The app starts with the main shopping list screen.  
+When the user adds a new grocery item, the data is sent to Firebase and displayed in the list on the screen.  
+Users can also remove items by swiping them from the list.
+
+## Technologies
+
+- Flutter
+- Dart
+- HTTP
+- Firebase Realtime Database
 
 ## Getting Started
 
-1. *Clone the repository:*
-   
-   git clone https://github.com/iremcimen/Shopping-List-App.git
-   
-2. *Install dependencies:*
-   
-   flutter pub get
-   
-3. *Run the app:*
-   
-   flutter run
-   
+To run this project locally:
 
-## Dependencies
-
-- [Flutter](https://flutter.dev/)
-- [http](https://pub.dev/packages/http)
-- [Firebase Realtime Database](https://firebase.google.com/products/realtime-database)
-
-## Project Structure
-
-- lib/ - Main source code
-  - models/ - Data models
-  - data/ - Static data
-  - widgets/ - UI components
-
-## License
-
-This project is for educational purposes.
+```bash
+git clone https://github.com/iremcimen/Shopping-List-App.git
+cd Shopping-List-App
+flutter pub get
+flutter run
